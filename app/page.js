@@ -86,12 +86,16 @@ export default function HomePage() {
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center shadow-lg shadow-blue-500/25">
-                <Building2 className="w-6 h-6 text-white" />
-              </div>
-              <span className="text-xl font-bold text-white">Hostel ERP</span>
-            </div>
+            {/* Logo */}
+<div className="flex items-center gap-3">
+
+<img src="/vihari-logo.png" width="45" />
+
+<span className="text-xl font-bold text-white">
+Vihari Co-Living..
+</span>
+
+</div>
 
             {/* Login Dropdown */}
             <div className="relative" ref={dropdownRef}>
@@ -183,7 +187,11 @@ export default function HomePage() {
                   <div className="h-48 bg-gradient-to-br from-blue-600/20 to-purple-600/20 relative overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 group-hover:from-blue-500/20 group-hover:to-purple-500/20 transition-all duration-500"></div>
                     <div className="flex items-center justify-center h-full">
-                      <Building2 className="h-20 w-20 text-slate-600 group-hover:text-slate-500 transition-colors duration-500" />
+                       <img
+  src={`/vihari-${index === 0 ? "grand" : "luxury"}.png`}
+  alt="Branch Image"
+  className="w-full h-full object-cover rounded-t-xl"
+/>
                     </div>
                   </div>
                   <CardContent className="p-6 space-y-4">
